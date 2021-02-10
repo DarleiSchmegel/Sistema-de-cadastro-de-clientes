@@ -1,11 +1,6 @@
 
 const jwt = require('jsonwebtoken');//usando comando yarn add jsonwebtoken
 
-const whatsappSession = require('../models/whatsappSession')
-const WhatsappSession = require('../models/whatsappSession')
-//const venom = require('venom-bot');
-//import { creat, Whatsapp } from 'venom-bot';
-
 function generateTokenSecundary(params = {}) {
     return token = jwt.sign(params, process.env.AUTH_CONFIG_SECRET_UNIVERSAL, { //
         expiresIn: 3600,
@@ -71,7 +66,7 @@ module.exports = {
         };
     },
     show(req,res) {
-        //whatsappSession.show(req.query.name)
+        //nada aqui
     }
 
 }

@@ -4,21 +4,12 @@ const AdminAuthControler = require('./controllers/AdminAuthController');
 const AdminTokensController = require('./controllers/AdminTokensController');
 
 const AuthController = require('./controllers/AuthController');
-const SessionController = require('./controllers/SessionController');
 const UserController = require('./controllers/UserController');
 
 const authMiddleware = require('./middleware/auth');
 const authAdminMiddleware = require('./middleware/authAdmin');
 
 const routes = express.Router();
-
-
-const venom = require('venom-bot');
-venom.create(
-    'Boot do Darlei', //Pass the name of the client you want to start the bot
-  )
-  .then((client) => start(client))
-  .catch((error) => console.log(error));
 
 
 //GET, POST, PUT, DELETE
